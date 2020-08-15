@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="io.huayu.springboot.system.mapper.StoreMapper">
+  <resultMap id="BaseResultMap" type="io.huayu.springboot.system.entity.Store">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="school_id" jdbcType="VARCHAR" property="schoolId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="responsible" jdbcType="VARCHAR" property="responsible" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="note" jdbcType="VARCHAR" property="note" />
+    <result column="rank" jdbcType="INTEGER" property="rank" />
+    <result column="traffic" jdbcType="INTEGER" property="traffic" />
+    <result column="image" jdbcType="VARCHAR" property="image" />
+    <result column="is_open" jdbcType="BIT" property="isOpen" />
+    <result column="delete" jdbcType="BIT" property="delete" />
+    <result column="createtime" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="updatetime" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, school_id, name, responsible, phone, note, rank, traffic, image, is_open, delete, 
+    createtime, updatetime
+  </sql>
+
+</mapper>
